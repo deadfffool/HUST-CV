@@ -1,1 +1,3 @@
 *.pth
+Cam/vis/
+__pycache__/
