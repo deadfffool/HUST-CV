@@ -31,7 +31,7 @@ if __name__ == '__main__':
     
     for i in range(len(args.layer_id)):
         layer_name = 'features_' + str(args.layer_id[i])
-        model_dict = dict(type='vgg16', arch=model, layer_name=layer_name, input_size=(224, 224))
+        model_dict = dict(type='alexnet', arch=model, layer_name=layer_name, input_size=(224, 224))
         layercam = LayerCAM(model_dict)
         predicted_class = model(img).max(1)[-1]
 
